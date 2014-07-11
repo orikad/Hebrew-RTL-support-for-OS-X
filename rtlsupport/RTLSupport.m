@@ -82,7 +82,7 @@
 + (void)load
 {
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(languageChanged:)
+                                           selector:@selector(languageChanged)
                                                name:NSTextInputContextKeyboardSelectionDidChangeNotification
                                              object:nil];
     
