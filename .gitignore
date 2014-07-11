@@ -1,3 +1,13 @@
 *.dylib
 lo_hebmsgs.mm
 *.swp
+
+rtlsupport.xcodeproj/xcuserdata/orikadosh.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+*.xcuserstate
+
+*.xcworkspacedata
+
+*.xcscheme
+
+rtlsupport.xcodeproj/xcuserdata/orikadosh.xcuserdatad/xcschemes/xcschememanagement.plist

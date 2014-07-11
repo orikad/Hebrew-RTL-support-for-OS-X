@@ -1,26 +1,14 @@
-##Hebrew support for Messages app (OS X)
+##Hebrew support for Mac OS X (system wide).
 
-Simple little hook that checks in the OS X Messages app if your input contains a Hebrew character then it right aligns the text.
+Simple little SIMBL plugin that adds RTL (right-to-left) support for Hebrew under OS X.
+Works with text boxes, like the one in Messages.app, search boxes, etc.
 
-
-###Compiling:
-This depends on the logos preprocessor (that comes bundled with theos), and assumes it is installed in /opt/theos, otherwise change the Makefile (theos: http://iphonedevwiki.net/index.php/Theos).
-
-This also assumes that there is a directory 'logos' in the current directory that links to /opt/theos/include/logos (since logos preprocessor includes that empty header file).
-
-
-Those assumptions satisfied, just type:
-make
-
-###Using:
-You need to insert the compiled library into Messages, I use DYLD_INSERT_LIBRARIES for that, you can google for more info.
-However Apple's signed apps by default ignore DYLD_INSERT_LIBRARIES so you might need to strip its signature. I've used Hopper Disassembler to do that.
+###How to install:
+1. Install a SIMBLE implementation (preferably EasySIMBL)
+2. Download the plugin bundle
+3. Drag into EasySIMBL (make sure 'Use SIMBL' is checked).
 
 
-Assuming your messages app is signature stripped, just type:
-DYLD_INSERT_LIBRARIES=./hebrewmsgs.dylib /Applications/Messages.app/Contents/MacOS/Messages
-
-
-
-(you can replace the Messages executable with a bash script that does that so it is transparent to you)
-
+###How to uninstall:
+1. Right click on “Hebrew RTL support” in EasySIMBl
+2. Click Uninstall “Hebrew RTL support”
